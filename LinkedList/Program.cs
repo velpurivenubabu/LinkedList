@@ -5,6 +5,19 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, Welcome to linked list!");
+            Console.WriteLine("Please Enter any one below Options");
+            int option=Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    CustomLinkedList customLinkedList = new CustomLinkedList();
+                    customLinkedList.AddLast(56);
+                    customLinkedList.AddLast(30);
+                    customLinkedList.AddLast(70);
+                    break;
+                            
+
+            }
         }
     }
 }
