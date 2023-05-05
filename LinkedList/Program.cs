@@ -15,8 +15,13 @@
                     customLinkedList.AddLast(30);
                     customLinkedList.AddLast(70);
                     break;
-                            
 
+                case 2:
+                    CustomLinkedList customLinkedList1 = new CustomLinkedList();
+                    customLinkedList1.AddFirst(70);
+                    customLinkedList1.AddFirst(30);
+                    customLinkedList1.AddFirst(56);
+                    break;
             }
         }
     }

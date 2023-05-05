@@ -32,6 +32,21 @@ namespace LinkedList
             }
             return temp;
         }
-      
+        public void AddFirst(int data)
+        {
+            Node newNode =new Node(data);
+            if( head == null )
+            {
+                head = newNode;
+                Console.WriteLine("{0} node is added into linkedlist", newNode.data);
+
+            }
+            else
+            {
+                newNode.next = head;
+                head = newNode;
+                Console.WriteLine("{0} node is added into linkedlist", newNode.data);
+            }
+        }
     }
 }
