@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, Welcome to linked list!");
-            Console.WriteLine("Please Enter any one below Options");
+            Console.WriteLine("Please Enter any one below Options\n1.Add data to the last\n2.Add data to the First\n3.Append Data");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -21,6 +21,14 @@
                     customLinkedList1.AddFirst(70);
                     customLinkedList1.AddFirst(30);
                     customLinkedList1.AddFirst(56);
+                    customLinkedList1.Display();
+                    break;
+                case 3:
+                    CustomLinkedList customLinkedList2 = new CustomLinkedList();
+                    customLinkedList2.Append(30);
+                    customLinkedList2.Append(70);
+                    customLinkedList2.Append(56);
+                    customLinkedList2.Display();
                     break;
             }
         }
